@@ -69,7 +69,7 @@ class BD_conexion {
      */
     public function escribir_consulta ($sql, $liberar = null){
         $result = $this->consultar($sql);
-        echo "filas = ".$result->num_rows;
+        //echo "filas = ".$result->num_rows;
         echo $this->escribir_consulta_html($result, $liberar);
     }
 
@@ -221,8 +221,7 @@ class BD_conexion {
         // cabecera de la tabla
         $select_html .= "<select name=".$name." >\n";
         while($fila = $result->fetch_array()){
-            $select_html .= "<option>".$fila[$columna_nombre]."</option>\n";
-
+            $select_html .= '<option value="'.$fila[$columna_valor].'">'.$fila[$columna_nombre].'</option>\n';
         }
         $select_html .= "</select>\n";
 

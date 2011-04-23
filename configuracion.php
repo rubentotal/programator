@@ -1,13 +1,12 @@
-<HTML LANG="es">
-
-<HEAD>
-   <TITLE>Programator</TITLE>
-   <LINK REL="stylesheet" TYPE="text/css" HREF="css/estilo.css"> 
+<html lang="es">
+<head>
+   <title>Programator</title>
+   <link REL="stylesheet" TYPE="text/css" HREF="css/estilo.css">
    <meta http-equiv="Content-Type" content="text/html; charset=utf8_spanish2_ci">
 
-</HEAD>
+</head>
 
-<BODY>
+<body>
 
 <?php
 
@@ -61,5 +60,5 @@ $interfaz->printDiasByRango($f1, $f2);
 
 ?>
 
-</BODY>
-</HTML>
+</body>
+</html>
