@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <h1>Funcionalidad</h1>
+    <p>Programar asignaturas/actividades en un calendario</p>
+
+    <h1>Tecnología</h1>
+    <p>Lenguaje de programación: php</p>
+    <p>Estática: MySQL, <i>en principio se podría cambiar por cualquiera</i></p>
+    <p>Servidor web: Apache <i>en principio se podría cambiar por cualquiera</i></p>
+
+    <h1>Diseño lógico de BD</h1>
+    <ul>
+        <li><b>Asignaturas</b>: nombre y descripción de la asignatura</li>
+        <li><b>Unidades</b>: nombre y horas de las unidades que componen cada asignatura
+            <i>(el color no se utiliza, se coge directamente del .css)</i>
+        </li>
+        <li><b>Horario</b>: días de clase de una asignatura y la cantidad de horas</li>
+        <li><b>Evaluaciones</b>:
+            <i>La evaluación P es para pendientes</i>
+            <i>Hay que tener cuidado con las asignaturas que solo tienen dos evaluaciones</i>
+        </li>
+        <li><b>Festivos</b>: fecha y descripción de los festivos</li>
+        <li><b>Vacaciones</b>: Períodos de vacaciones</li>
+
+    </ul>
+
+    <h1>Código</h1>
+    <ul>        
+        <li><b>Programator</b>: Realiza la programación. Guarda los datos en las variables
+            <ul>                
+                <li><b>$UNIDADES:</b>lista de unidades con su fecha de inicio, fin, dias 
+                    y las horas que faltan por asignar</li>
+                <li><b>$DIAS:</b></li>
+                <li><b>programar_dias():</b>recorre las evaluaciones y los días asignando cada día a una unidad</li>
+            </ul>
+        </li>
+
+        <li><b>Interfaz</b>: Escribe la programación. Genera html a partir de $DIAS y $UNIDADES calculador por Programator
+            <ul>
+                <li><b>printDiasByRango()</b>escribe toda la información de la
+                    programación</li>
+                <li><b>printUnidades:</b>Escribe las unidades</li>
+                <li><b>estilo.css:</b>Estilo/colores de las unidades
+                    <ul>
+                        <li>TD.UDX: estilo de los dias de clase de una unidad</li>
+                        <li>TD.UDX_noclase: estilo de los dias docentes asociados
+                            a una unidad que no hay clase <i>Puede ser igual al de los días con clase</i></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+        <li><b>Configuración</b>: Inicio de la aplicación.
+            <ol>
+                <li>Muestra la configuración</li>
+                <li>Calcula la programación con Programator<i>$programator->programarDias($asignatura, $evaluaciones );</i></li>
+                <li>Muestra el resultado con Interfaz <i>$interfaz->printDiasByRango()</i></li>
+            </ol>
+        </li>
+        <li><b>Unidad</b>: Contendedor de datos de la unidad
+            <ul>
+                <li><b>pendiente()</b>:horas que faltan por asignar a la unidad</li>
+                <li><b>$DIAS:</b> dias que se han asociado a la unidad</li>
+                <li><b>asignarDia: incluye un días y unas horas a la unidad</b></li>
+            </ul>
+        </li>
+    </ul>
+
+
+  </body>
+</html>

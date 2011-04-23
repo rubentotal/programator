@@ -1,0 +1,39 @@
+/* General */
+BODY {font-family: verdana,arial, sans-serif; font-size: 10pt;}
+
+/* Contenido */
+H1 {font-size: 16pt; font-weight: bold; color: darkslateblue;}
+
+/* Tablas */
+TH {font-size: 10pt; font-weight: bold; color: white; background: #0066CC; text-align: left;}
+TD {font-size: 10pt; background: #CCCCCC; vertical-align:top;}
+TD.derecha {font-size: 10pt; text-align: right; background: #FFFFFF;}
+TD.izquierda {font-size: 10pt; text-align: left; background: #FFFFFF;}
+
+/* Unidades */
+TD.UD0 {font-size: 10pt; background: gold; }
+TD.UD1 {font-size: 10pt; background: green; }
+TD.UD2 {font-size: 10pt; background: violet}
+TD.UD3 {font-size: 10pt; background: blue;}
+TD.UD4 {font-size: 10pt; background: crimson;}
+TD.UD5 {font-size: 10pt; background: olive;}
+TD.UD6 {font-size: 10pt; background: blueviolet;}
+TD.UD7 {font-size: 10pt; background: cadetblue;}
+TD.UD8 {font-size: 10pt; background: darkmagenta;}
+
+/* Unidades No_lectivo*/
+TD.UD0_noclase {font-size: 10pt; background: gold; }
+TD.UD1_noclase {font-size: 10pt; background: green; }
+TD.UD2_noclase {font-size: 10pt; background: violet}
+TD.UD3_noclase {font-size: 10pt; background: blue;}
+TD.UD4_noclase {font-size: 10pt; background: crimson;}
+TD.UD5_noclase {font-size: 10pt; background: olive;}
+TD.UD6_noclase {font-size: 10pt; background: blueviolet;}
+TD.UD7_noclase {font-size: 10pt; background: cadetblue;}
+TD.UD8_noclase {font-size: 10pt; background: darkmagenta;}
+
+
+/*NO lectivo */
+TD.Festivo {font-size: 10pt; background: red;}
+TD.FinDeSemana {font-size: 10pt; background: orange;}
+TD.Vacaciones {font-size: 10pt; background: orangered;}
