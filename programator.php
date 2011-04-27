@@ -213,7 +213,7 @@ class Programator {
 
 
     public function cargarUnidades($asignatura){
-        $sql = "SELECT * FROM Unidades WHERE Asignatura =  '".$asignatura."' ORDER BY Codigo ASC";
+        $sql = "SELECT * FROM unidades WHERE Asignatura =  '".$asignatura."' ORDER BY Codigo ASC";
         $result = $this->BD->consultar($sql);
 
         while ($unidad = $result->fetch_object('Unidad')){            
